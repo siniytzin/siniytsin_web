@@ -549,6 +549,8 @@ body {
 
 
 .get-started__button {
+  width: 160px;
+  height: 48px;
   font-weight: 900;
   font-size: 14px;
   line-height: 14px;
@@ -713,7 +715,8 @@ body {
   box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
   border-radius: 6px;
   align-self: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .testimonials__button:hover {
@@ -874,7 +877,6 @@ body {
 
   .text__item {
     text-align: center;
-    margin: 15px;
   }
 
   .greeting__items {
@@ -1225,7 +1227,6 @@ body {
     border-color: #ffffffa3;
   }
 
-
   #hamnav label:hover {
     background-color: #EF6D58;
     color: #ffffff;
@@ -1412,8 +1413,8 @@ body {
   }
 
   .testimonials__button:hover {
-  background-color: #EF6D58;
-  color: #ffffff;
-  border-color: #ffffff;
+    background-color: #EF6D58;
+    color: #ffffff;
+    border-color: #ffffff;
   }
 }
