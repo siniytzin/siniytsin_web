@@ -6,7 +6,8 @@ a {
   text-decoration: none;
 }
 
-h2, p {
+h2,
+p {
   margin: 0;
 }
 
@@ -262,6 +263,7 @@ body {
   width: 20px;
   margin: 10px;
 }
+
 .item__button {
   font-size: 16px;
   font-weight: 400;
@@ -1285,7 +1287,7 @@ body {
     padding-top: 30px;
   }
 
-/* 
+  /* 
   .item__title::before {
     content: url(/img/icon.svg);
     position: absolute;
