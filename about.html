@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="создание сайта, сайт для организации, создать личный сайт" />
+    <title>Создание сайтов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="./img/logo.png" alt="">
+                </a>
+                <nav id="hamnav" class="header__nav">
+                    <label for="hamburger" class="menu"
+                        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                        aria-label="Main Menu">
+                        <svg width="50" height="50" viewBox="0 0 100 100">
+                            <path class="line line1"
+                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3"
+                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                    </label>
+                    <input type="checkbox" id="hamburger" />
+                    <div class="slow-visible" id="hamitems">
+                        <a class="nav__link" href="./index.html">Главная</a>
+                        <a class="nav__link" href="./about.html">Обо мне</a>
+                        <a class="nav__link" href="./servises.html">Услуги</a>
+                        <a class="nav__link" href="./portfolio.html">Работы</a>
+                    </div>
+                </nav>
+                <button class="header__button button">
+                    СВЯЗАТЬСЯ
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main__content">
+        <div class="container">
+            <section class="page-header">
+                <div class="page-header__title">
+                    Обо мне
+                </div>
+                <div class="page-header__subtitle">
+                    Несколько слов об опыте который я получил, используемых инструментах, планах идеях.
+                </div>
+            </section>
+            <section class="page-content">
+                <div class="page-content__image">
+                    <img src="./img/about-1.jpg" alt="">
+                </div>
+                <div class="page-content__text">
+                    <div class="page-content__text__subtitle">
+                        АЛЕКСАНДР СИНИЦИН
+                    </div>
+                    <h2 class="page-content__text__title"> Опытный разработчик</h2>
+                    <p class="page-content__text__p">
+                        Умение поставить себя на место торговца. Он
+                        предназначен
+                        для долгосрочного партнерства и работы в качестве расширения команды продавца.
+                        Цифровое агентство - это бизнес, который вы нанимаете для передачи своих усилий по цифровому
+                        маркетингу на аутсорсинг, вместо того чтобы заниматься собственными силами. Они могут
+                        предоставить вашему бизнесу различные цифровые решения для продвижения вашего продукта или
+                        услуги в Интернете и помочь вам.
+                    </p>
+                </div>
+            </section>
+            <section class="skills-section">
+                <div class="skills-section__text">
+                    <div class="skills-section__text__title">
+                        Инструменты
+                    </div>
+                    <p class="skills-section__text__p">
+                        Языки програмирования, библиотеки, фреймворки, системы сборки и системы управления сайтами которые я использую ежедневно.
+                    </p>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="https://cdn.freebiesupply.com/logos/large/2x/html-5-logo-png-transparent.png"
+                                    alt="" class="skills-icons">
+                            </div>
+                            <h3>HTML 5</h3>
+                        </div>
+                        <P> Lorem Lorem Lorem </P>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg" alt=""
+                                    class="skills-icons">
+                            </div>
+                            <h3>CSS3</h3>
+                        </div>
+                        <P> Lorem Lorem Lorem </P>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="https://icon-library.net/images/javascript-icon-png/javascript-icon-png-23.jpg"
+                                    alt="" class="skills-icons">
+                            </div>
+                            <h3>JAVASCRIPT</h3>
+                        </div>
+                        <P> Lorem Lorem Lorem </P>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="http://pluspng.com/img-png/nodejs-logo-png-nice-images-collection-node-js-desktop-wallpapers-370.png"
+                                    alt="" class="skills-icons">
+                            </div>
+                            <h3>NODE.JS</h3>
+                        </div>
+                        <P> Lorem Lorem Lorem </P>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="https://mildaintrainings.com/wp-content/uploads/2017/11/react-logo.png" alt=""
+                                    class="skills-icons">
+                            </div>
+                            <h3>REACT</h3>
+                        </div>
+                        <P> Lorem Lorem Lorem </P>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-title">
+                            <div class="skills-img">
+                                <img src="https://javascriptforwp.com/wp-content/uploads/2019/03/badge-gatsby.png"
+                                    alt="" class="skills-icons">
+                            </div>
+                            <h3>GATSBY.JS</h3>
+                        </div>
+                        <P> Lorem Lorem Lorem </P>
+                    </div>
+                </div>
+            </section>
+            <section class="get-started get-started--about-page">
+                <img class="idea" src="./img/idea.svg" alt="">
+                <div class="get-started__container get-started__container--about-page">
+                    <div class="get-started__inner">
+                        <div class="get-started__items">
+                            <p class="get-started__subtitle text__item">
+                                НАЧАТЬ СОТРУДНИЧЕСТВО
+                            </p>
+                            <h2 class="get-started__text-header text__item">
+                                Быстрый старт для Вашего бизнеса
+                            </h2>
+                        </div>
+                        <div class="get-started__text text__item">
+                            Мы в месте разработаем план работы - определим цели, поставим задачи, запустим проект.
+                        </div>
+                        <div class="get-started__svg">
+                            <img class="get-started__svg-item" src="./img/get-started.svg" alt="">
+                        </div>
+                    </div>
+                    <button class="get-started__button button">
+                        Связаться
+                    </button>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <div class="footer__name">
+                        Sin Web
+                    </div>
+                    <ul class="footer__list-menu">
+                        <li class="footer__list-title"> МЕНЮ</li>
+                        <li class="footer__list-item"> <a href="#"> Обо мне</a></li>
+                        <li class="footer__list-item"> <a href="#"> Услуги</a></li>
+                        <li class="footer__list-item"> <a href="#"> Контакты</a></li>
+                    </ul>
+                    <ul class="footer__list-servises">
+                        <li class="footer__list-title">УСЛУГИ</li>
+                        <li class="footer__list-item"> <a href="#"> Сайт под ключ</a></li>
+                        <li class="footer__list-item"> <a href="#"> Верстка готового макета</a></li>
+                        <li class="footer__list-item"> <a href="#"> Предоставление макета</a></li>
+                        <li class="footer__list-item"> <a href="#"> Модернизация сайта</a></li>
+                    </ul>
+                    <div class="social__icons">
+                        social
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="footer__bottom">
+                    <div class="copyright">
+                        Copyright © 2021 Синицин. Все права зарегистрированы.
+                    </div>
+                    <div class="footer__bottom-right">
+                        <a class="footer__text-link" href=""> Условия использования </a>
+                        <a class="footer__text-link" href="">Политика конфеденциальности </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+</body>
