@@ -17,16 +17,25 @@
 <body>
     <header class="header">
         <div class="container">
-            
             <div class="header__content">
                 <a class="logo" href="#">
                     <img class="logo__img" src="./img/logo.png" alt="">
                 </a>
                 <nav id="hamnav" class="header__nav">
-                    <label for="hamburger"></label>
+                    
+                    <label  for="hamburger" class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                        <svg width="50" height="50" viewBox="0 0 100 100">
+                            <path class="line line1"
+                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3"
+                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                    </label>
                     <input type="checkbox" id="hamburger" />
-
-                    <div id="hamitems">
+                    <div class="slow-visible" id="hamitems">
                         <a class="nav__link" href="#">Главная</a>
                         <a class="nav__link" href="#">Обо мне</a>
                         <a class="nav__link" href="#">Услуги</a>
@@ -39,7 +48,6 @@
             </div>
         </div>
     </header>
-
     <main class="main__content">
         <section class="about">
             <div class="container">
@@ -264,25 +272,28 @@
         <section class="get-started">
             <div class="container">
                 <img class="idea" src="/img/idea.svg" alt="">
-                <div class="get-started__inner">
+                <div class="get-started__container">
+                    <div class="get-started__inner">
+                        <div class="get-started__items">
+                            <p class="get-started__subtitle text__item">
+                                НАЧАТЬ СОТРУДНИЧЕСТВО
+                            </p>
+                            <h2 class="get-started__text-header text__item">
+                                Быстрый старт для Вашего бизнеса
+                            </h2>
 
-                    <div class="get-started__items">
-                        <p class="get-started__subtitle text__item">
-                            НАЧАТЬ СОТРУДНИЧЕСТВО
-                        </p>
-                        <h2 class="get-started__text-header text__item">
-                            Быстрый старт для Вашего бизнеса
-                        </h2>
-                        <button class="get-started__button button">
-                            Связаться
-                        </button>
+                        </div>
+                        <div class="get-started__text text__item">
+                            Мы в месте разработаем план работы - определим цели, поставим задачи, запустим проект.
+                        </div>
+                        <div class="get-started__svg">
+                            <img class="get-started__svg-item" src="./img/get-started.svg" alt="">
+                        </div>
                     </div>
-                    <div class="get-started__text text__item">
-                        Мы в месте разработаем план работы - определим цели, поставим задачи, запустим проект.
-                    </div>
-                    <div class="get-started__svg">
-                        <img class="get-started__svg-item" src="./img/get-started.svg" alt="">
-                    </div>
+                    <button class="get-started__button button">
+                        Связаться
+                    </button>
+
                 </div>
             </div>
             </div>
