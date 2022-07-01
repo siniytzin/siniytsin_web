@@ -1027,7 +1027,7 @@ svg {
   height: 80px;
   left: 0px;
   top: 0px;
-  background: url(/img/Oval.png);
+  background: url(../img/Oval.png);
 }
 
 .testimonials__item-icon {
