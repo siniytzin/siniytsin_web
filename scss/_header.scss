@@ -1,0 +1,47 @@
+.header {
+  background-color: #28293E;
+
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+}
+
+.logo__img {
+  width: 170px;
+  height: 48px;
+}
+
+.header__nav {
+  color: #fff;
+  display: flex;
+}
+
+#hamnav label,
+#hamburger {
+  display: none;
+}
+
+
+.nav__link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0;
+}
+
+.nav__link+.nav__link {
+  margin-left: 100px;
+}
+
+.nav__link:hover {
+  color: #EF6D58;
+}
+
+.header__button {
+  width: 138px;
+  height: 48px;
+}
