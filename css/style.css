@@ -1178,7 +1178,7 @@ svg {
 }
 @media (max-width: 1150px) {
   .container {
-    padding: 0;
+    padding: 8px;
   }
 
   .header__content {
@@ -1782,7 +1782,7 @@ svg {
   }
 }
 .page-header {
-  margin: 70px 0;
+  margin: 70px 60px;
 }
 .page-header__title {
   margin-bottom: 24px;
@@ -1809,8 +1809,7 @@ svg {
   margin: 70px 135px;
 }
 .page-content__image > img {
-  width: 1170px;
-  height: 656px;
+  width: 100%;
 }
 .page-content__text {
   padding: 0 25% 65px;
@@ -1889,8 +1888,8 @@ svg {
   align-items: center;
   text-align: center;
   grid-gap: 1rem;
-  padding: 1rem 80px;
-  font-size: 1.2rem;
+  padding: 1rem 40px;
+  font-size: 1rem;
 }
 
 .skills-box {
@@ -1948,6 +1947,8 @@ svg {
 .skills-img {
   width: 120px;
   height: 120px;
+  background-color: #FDF0E9;
+  box-shadow: 0px 0px 9px #000000;
   position: relative;
   border-radius: 6px;
   display: flex;
@@ -1971,14 +1972,40 @@ svg {
 }
 
 @media screen and (max-width: 990px) {
+  .page-content__image {
+    margin: auto 10%;
+  }
+  .page-content__text {
+    padding: 0 10% 65px;
+  }
+
   .skills-container {
     grid-tempLate-columns: repeat(2, 1fr);
     padding: 2rem 50px;
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 650px) {
+  .page-content__text {
+    padding: 0 30px;
+  }
+  .page-content__text__title {
+    margin-bottom: 0;
+    font-size: 43px;
+  }
+
+  .skills-section {
+    padding-top: 0;
+  }
+  .skills-section__text {
+    padding-top: 5px;
+  }
+  .skills-section__text__title {
+    font-size: 43px;
+  }
+
   .skills-container {
-    grid-tempLate-columns: 2fr;
+    grid-tempLate-columns: 1fr;
     padding: 2rem 50px;
   }
 }

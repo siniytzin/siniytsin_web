@@ -1,5 +1,5 @@
 .page-header {
-  margin: 70px 0;
+  margin: 70px 60px;
 
   &__title {
     margin-bottom: 24px;
@@ -28,8 +28,7 @@
     margin: 70px 135px;
 
     &>img {
-      width: 1170px;
-      height: 656px;
+      width: 100%;
     }
   }
 
@@ -73,6 +72,7 @@
 
   &__text {
     padding-top: 75px;
+
     &__title {
       margin-bottom: 24px;
       font-size: 72px;
@@ -81,6 +81,7 @@
       letter-spacing: -2px;
       color: #FFFFFF;
     }
+
     &__p {
       font-weight: 400;
       font-size: 16px;
@@ -118,8 +119,8 @@
   align-items: center;
   text-align: center;
   grid-gap: 1rem;
-  padding: 1rem 80px;
-  font-size: 1.2rem;
+  padding: 1rem 40px;
+  font-size: 1rem;
 }
 
 .skills-box {
@@ -178,6 +179,8 @@
 .skills-img {
   width: 120px;
   height: 120px;
+  background-color: #FDF0E9;
+  box-shadow: 0px 0px 9px #000000;
   position: relative;
   border-radius: 6px;
   display: flex;
@@ -203,15 +206,52 @@
 
 
 @media screen and (max-width:990px) {
+  .page-content {
+    &__image {
+      margin: auto 10%;
+    }
+
+    &__text {
+      padding: 0 10% 65px;
+    }
+  }
+
   .skills-container {
     grid-tempLate-columns: repeat(2, 1fr);
     padding: 2rem 50px;
+    font-size: .8rem;
   }
 }
 
 @media screen and (max-width:650px) {
+  .page-content {
+    &__text {
+      padding: 0 30px;
+
+      &__title {
+        margin-bottom: 0;
+        font-size: 43px;
+      }
+    }
+  }
+
+
+  .skills-section {
+    padding-top: 0;
+
+    &__text {
+      padding-top: 5px;
+
+      &__title {
+        font-size: 43px;
+      }
+    }
+
+  }
+
+
   .skills-container {
-    grid-tempLate-columns: 2fr;
+    grid-tempLate-columns: 1fr;
     padding: 2rem 50px;
   }
 }
