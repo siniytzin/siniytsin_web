@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="создание сайта, сайт для организации, создать личный сайт" />
+    <title>Создание сайтов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="./img/logo.png" alt="">
+                </a>
+                <nav id="hamnav" class="header__nav">
+                    <label for="hamburger" class="menu"
+                        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                        aria-label="Main Menu">
+                        <svg width="50" height="50" viewBox="0 0 100 100">
+                            <path class="line line1"
+                                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                            <path class="line line2" d="M 20,50 H 80" />
+                            <path class="line line3"
+                                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                    </label>
+                    <input type="checkbox" id="hamburger" />
+                    <div class="slow-visible" id="hamitems">
+                        <a class="nav__link" href="./index.html">Главная</a>
+                        <a class="nav__link" href="./about.html">Обо мне</a>
+                        <a class="nav__link" href="./servises.html">Услуги</a>
+                        <a class="nav__link" href="./portfolio.html">Работы</a>
+                    </div>
+                </nav>
+                <button class="header__button button">
+                    СВЯЗАТЬСЯ
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main__content">
+        <div class="container">
+            <section class="page-header">
+                <div class="page-header__title">
+                    Услуги
+                </div>
+                <div class="page-header__subtitle">
+                    Полный список и подробное описание того чем я могу быть Вам полезен.
+                </div>
+            </section>
+            <section class="servises__page">
+                <p class="servises__page-subtitle">
+                    УСЛУГИ
+                </p>
+                <div class="servises__page__inner">
+                    <div class="servises__page__inner-item">
+                        <h2 class="item__text-heading">
+                            Современные, адаптивные, быстрые сайты для представления вас и вашего бизнеса в онлайн.
+                        </h2>
+                    </div>
+                    <div class="servises__page__inner-item">
+                        <p class="item__text-content">
+                            В настоящее время веб-индустрия переживает бум. Бизнес уходит в онлайн. Конкурентная борьба
+                            в
+                            интернете набирает обороты. И ее главным инструментом стал веб-дизайн. Популярные тренды
+                            определяют, каким должен быть сайт в 2022 году, чтобы задержать внимание пользователей и
+                            обеспечить преимущества нужно следовать им.
+                        </p>
+                        <p class="item__text-content">
+                            Согласно исследованиям, регулярно проводящимся в интернет сообществе, можно сделать вывод,
+                            что:
+                        <ul class="item__text-list">
+                            <li>40% опрошенных не будут пользоваться сайтом с неопрятным видом;</li>
+                            <li>95% пользователей не доверяют сайтам с плохим дизайном;</li>
+                            <li>60% пользователей закроют сайт, интерфейс которого не стал им понятен в течение первых
+                                15 секунд после открытия.</li>
+                            <li>72% компаний в онлайн-пространстве собираются расширять штат веб-дизайнеров</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>

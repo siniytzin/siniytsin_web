@@ -2009,3 +2009,46 @@ svg {
     padding: 2rem 50px;
   }
 }
+.servises__page {
+  background-color: #FDF0E9;
+  color: #391400;
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px #000000;
+}
+.servises__page-subtitle {
+  padding-top: 76px;
+  padding-left: 135px;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #EF6D58;
+}
+.servises__page__inner {
+  display: flex;
+  align-items: baseline;
+  padding: 0 135px;
+}
+.servises__page__inner-item {
+  padding-bottom: 97px;
+}
+.servises__page__inner-item + .servises__page__inner-item {
+  padding-left: 130px;
+}
+
+.item__text-heading {
+  font-size: 40px;
+  line-height: 48px;
+  color: #391400;
+}
+.item__text-content {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.9);
+}
+.item__text-list {
+  color: rgba(57, 20, 0, 0.9);
+  padding-left: 10px;
+  line-height: 18px;
+}
