@@ -63,7 +63,7 @@ svg {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 5px;
 
 }
 
@@ -1373,6 +1373,8 @@ $drawer-open-transition: all cubic-bezier(0.92, -0.15, 0.21, 0.86) 0.25s;
   .header__content {
     position: relative;
     padding: 0;
+    margin-top: 5px;
+    margin: 0 10px;
   }
 
   .header__button {
@@ -1391,7 +1393,7 @@ $drawer-open-transition: all cubic-bezier(0.92, -0.15, 0.21, 0.86) 0.25s;
     border: none;
     cursor: pointer;
     display: flex;
-    padding: 0;
+    line-height: 0px;
   }
 
   .line {
@@ -1626,7 +1628,7 @@ $drawer-open-transition: all cubic-bezier(0.92, -0.15, 0.21, 0.86) 0.25s;
 
 @media (max-width: 396px) {
   .container {
-    margin: 0 6px;
+    margin: 0 0;
   }
 
   .logo {
