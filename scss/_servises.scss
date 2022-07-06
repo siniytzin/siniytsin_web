@@ -22,12 +22,13 @@
     padding: 0 135px;
 
     &-item {
+      padding-top: 30px;
       padding-bottom: 97px;
       width: 50%;
     }
 
     &-item+&-item {
-      padding-left: 130px;
+      padding-left: 30px;
     }
   }
 
@@ -43,6 +44,7 @@
     font-size: 40px;
     line-height: 48px;
     color: #391400;
+    width: 80%;
   }
 
   &-content {
@@ -74,7 +76,7 @@
       font-size: 72px;
       line-height: 58px;
       position: absolute;
-      left: -66px;
+      left: -70px;
     }
 
   }
@@ -88,7 +90,8 @@
     color: #391400;
 
     & .ui-accordion-header {
-      padding: 30px 10px;
+      padding: 30px 0 30px 90px;
+      
       cursor: pointer;
       outline: none;
       position: relative;
@@ -112,15 +115,44 @@
       display: inline-block;
       width: 32px;
       height: 32px;
-      background: url(../img/down.svg) 50% 50% no-repeat;
+      background: url(../img/up.svg) 50% 50% no-repeat;
     }
 
     & .ui-accordion-header-active .ui-accordion-header-icon {
-      background-image: url(../img/up.svg);
+      background-image: url(../img/down.svg);
     }
   }
 }
+.accordion {
+  position: relative;
+  &-header-1::before {
+    position: absolute;
+    top: 32px;
+    left: 4px;
+    content: url(../img/website.svg);
+  }
 
+  &-header-2::before {
+    content: url(../img/browser.svg);
+    position: absolute;
+    top: 35px;
+    left: 4px;
+  }
+
+  &-header-3::before {
+    content: url(../img/browser-2.svg);
+    position: absolute;
+    top: 35px;
+    left: 4px;
+  }
+
+  &-header-4::before {
+    content: url(../img/404-error.svg);
+    position: absolute;
+    top: 35px;
+    left: 4px;
+  }
+}
 .accordion-bottom {
   &-title {
     font-size: 40px;

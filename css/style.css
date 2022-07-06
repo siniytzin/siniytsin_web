@@ -547,12 +547,18 @@ svg {
   justify-content: space-between;
   flex-direction: column;
   margin: 2px;
-  padding: 30px;
+  padding: 38px 30px 30px;
   flex-basis: 500px;
   background: #FDF0E9;
   border: 2.5px solid #F3D1BF;
   border-radius: 6px;
   position: relative;
+}
+.servises__item-svg {
+  width: 61px;
+  height: 61px;
+  top: 22px;
+  position: absolute;
 }
 
 .servises__item:hover {
@@ -591,7 +597,7 @@ svg {
   line-height: 32px;
   letter-spacing: 0px;
   text-align: left;
-  padding-left: 14px;
+  padding-left: 80px;
   padding-bottom: 20px;
 }
 
@@ -2171,11 +2177,12 @@ svg {
   padding: 0 135px;
 }
 .servises__page__inner-item {
+  padding-top: 30px;
   padding-bottom: 97px;
   width: 50%;
 }
 .servises__page__inner-item + .servises__page__inner-item {
-  padding-left: 130px;
+  padding-left: 30px;
 }
 .servises__page-bottom {
   box-shadow: 0px 0px #000000;
@@ -2186,6 +2193,7 @@ svg {
   font-size: 40px;
   line-height: 48px;
   color: #391400;
+  width: 80%;
 }
 .item__text-content {
   margin-top: 20px;
@@ -2214,7 +2222,7 @@ svg {
   font-size: 72px;
   line-height: 58px;
   position: absolute;
-  left: -66px;
+  left: -70px;
 }
 
 .servises__accordion {
@@ -2225,7 +2233,7 @@ svg {
   color: #391400;
 }
 .servises__accordion > .accordion .ui-accordion-header {
-  padding: 30px 10px;
+  padding: 30px 0 30px 90px;
   cursor: pointer;
   outline: none;
   position: relative;
@@ -2247,10 +2255,38 @@ svg {
   display: inline-block;
   width: 32px;
   height: 32px;
-  background: url(../img/down.svg) 50% 50% no-repeat;
+  background: url(../img/up.svg) 50% 50% no-repeat;
 }
 .servises__accordion > .accordion .ui-accordion-header-active .ui-accordion-header-icon {
-  background-image: url(../img/up.svg);
+  background-image: url(../img/down.svg);
+}
+
+.accordion {
+  position: relative;
+}
+.accordion-header-1::before {
+  position: absolute;
+  top: 32px;
+  left: 4px;
+  content: url(../img/website.svg);
+}
+.accordion-header-2::before {
+  content: url(../img/browser.svg);
+  position: absolute;
+  top: 35px;
+  left: 4px;
+}
+.accordion-header-3::before {
+  content: url(../img/browser-2.svg);
+  position: absolute;
+  top: 35px;
+  left: 4px;
+}
+.accordion-header-4::before {
+  content: url(../img/404-error.svg);
+  position: absolute;
+  top: 35px;
+  left: 4px;
 }
 
 .accordion-bottom-title {

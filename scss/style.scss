@@ -166,12 +166,18 @@ svg {
   justify-content: space-between;
   flex-direction: column;
   margin: 2px;
-  padding: 30px;
+  padding: 38px 30px 30px;
   flex-basis: 500px;
   background: #FDF0E9;
   border: 2.5px solid #F3D1BF;
   border-radius: 6px;
   position: relative;
+  &-svg {
+    width: 61px;
+    height: 61px;
+    top: 22px;
+    position: absolute;
+  }
 }
 
 
@@ -212,9 +218,10 @@ svg {
   line-height: 32px;
   letter-spacing: 0px;
   text-align: left;
-  padding-left: 14px;
+  padding-left: 80px;
   padding-bottom: 20px;
 }
+
 
 .item__text {
   display: flex;
