@@ -6,7 +6,7 @@ $('.accordion').accordion({
 
 $('.center').slick({
   centerMode: true,
-  // autoplay: true,
+  autoplay: true,
 	dots: true,
 	arrows:false,
   centerPadding: '20px',
