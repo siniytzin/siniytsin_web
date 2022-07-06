@@ -591,6 +591,13 @@ svg {
   text-decoration: underline;
 }
 
+.footer__name {
+  width: 20%;
+}
+.footer__name > img {
+  width: 100%;
+}
+
 .item__title {
   font-size: 24px;
   font-weight: 700;

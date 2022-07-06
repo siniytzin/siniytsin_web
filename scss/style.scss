@@ -172,6 +172,7 @@ svg {
   border: 2.5px solid #F3D1BF;
   border-radius: 6px;
   position: relative;
+
   &-svg {
     width: 61px;
     height: 61px;
@@ -210,6 +211,15 @@ svg {
 .footer__link {
   color: #391400;
   text-decoration: underline;
+}
+
+.footer__name {
+  width: 20%;
+
+  &>img {
+    width: 100%;
+
+  }
 }
 
 .item__title {
@@ -783,7 +793,7 @@ svg {
 $drawer-width: 180px;
 $drawer-height: 60px;
 $drawer-color: #EF6D58;
-$drawer-open-transition: all cubic-bezier(0.92,-0.15, 0.21, 0.86) 0.25s;
+$drawer-open-transition: all cubic-bezier(0.92, -0.15, 0.21, 0.86) 0.25s;
 
 
 .drawer {
