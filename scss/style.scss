@@ -1,5 +1,16 @@
 @import "header.scss";
 @import "normalize.scss";
+@import "slick.scss";
+@import "slick-theme.scss";
+
+.slick-list {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.slick-current {
+  background-color: #fdd6c1 !important;
+}
 
 * {
   box-sizing: border-box;
@@ -28,7 +39,6 @@ svg {
 }
 
 :hover {
-  transition: all .3s;
 }
 
 ul {
@@ -70,6 +80,7 @@ svg {
   background-color: #EF6D58;
   color: #ffffff;
   border-color: #ffffff;
+  transition: all .3s;
 }
 
 .about {
@@ -131,7 +142,7 @@ svg {
   background-color: #FDF0E9;
   color: #391400;
   padding-top: 90px;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: 0px 0px 9px #000000;
 }
 
@@ -162,9 +173,7 @@ svg {
 }
 
 .servises__item {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  min-height: 350px;
   margin: 2px;
   padding: 38px 30px 30px;
   flex-basis: 500px;
@@ -172,6 +181,7 @@ svg {
   border: 2.5px solid #F3D1BF;
   border-radius: 6px;
   position: relative;
+  
 
   &-svg {
     width: 61px;
@@ -181,15 +191,6 @@ svg {
   }
 }
 
-
-.servises__item:hover {
-  box-shadow: 0px 0px 9px #28293e7e;
-  cursor: pointer;
-  transform: scale(1.01);
-  transition: box-shadow .3s ease, z-index 0s 0s ease;
-  transition: box-shadow .3s ease, transform .3s ease, z-index 0s 0s ease;
-  transition: box-shadow .3s ease, transform .3s ease, z-index 0s 0s ease, -webkit-transform .2s ease
-}
 
 .servises__bottom {
   padding-top: 60px;
@@ -245,11 +246,11 @@ svg {
 }
 
 .item__button {
+  position: absolute;
   font-size: 16px;
-  font-weight: 400;
   line-height: 32px;
-  letter-spacing: 0px;
-  text-align: right;
+  bottom: 28px;
+  right: 28px;
 }
 
 .works__head {
@@ -618,21 +619,24 @@ svg {
   text-align: center;
 }
 
-.testimonials__items {
-  display: flex;
-  justify-content: center;
+.slick-current {
+  box-shadow: 0px 0px 9px rgba(40, 41, 62, 0.4941176471);
+  z-index: 1;
+  transform: scale(1.04);
+  transition: 0.4s ease-out;
+  cursor: pointer;
 }
 
 .testimonials__item {
-  padding: 108px 47px 52px;
-  max-width: 391px;
+  display: flex;
+  position: relative;
+  min-height: 430px;
+  padding: 40px 47px 52px;
   background: #FDF0E9;
   border: 1.5px solid #F3D1BF;
   border-radius: 6px;
-  position: relative;
-  margin-bottom: 100px;
-  margin-top: 20px;
-  box-shadow: 0px 0px 9px #28293e7e;
+  margin: 3px;
+  box-shadow: 0px 0px 4px #28293e7e;
 }
 
 .testimonials__item-middle {
@@ -652,12 +656,18 @@ svg {
   line-height: 32px;
 }
 
+.testimonials__item-bottom{
+  position: absolute;
+  bottom: 24px;
+  
+}
+
 .testimonials__item-name {
+  bottom: 76px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  position: relative;
   padding-left: 100px;
 }
 
@@ -670,16 +680,15 @@ svg {
   position: absolute;
   width: 80px;
   height: 80px;
-  left: 0px;
-  top: 0px;
+  left: 10px;
+  top: -13px;
   background: url(../img/Oval.png);
 }
 
 .testimonials__item-icon {
-  position: absolute;
-  top: 58px;
-  left: 45px;
-
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 7px;
 }
 
 .testimonials__bottom {
@@ -996,8 +1005,7 @@ $drawer-open-transition: all cubic-bezier(0.92, -0.15, 0.21, 0.86) 0.25s;
   }
 
   .testimonials__item {
-    padding: 120px 20px 20px;
-    margin-bottom: 100px;
+    padding: 20px 20px 20px;
     margin-top: 20px;
   }
 
@@ -1009,7 +1017,7 @@ $drawer-open-transition: all cubic-bezier(0.92, -0.15, 0.21, 0.86) 0.25s;
 
 @media (max-width: 1150px) {
   .container {
-    padding: 8px;
+    padding: 0 8px;
   }
 
   .header__content {
@@ -1499,17 +1507,10 @@ $drawer-open-transition: all cubic-bezier(0.92, -0.15, 0.21, 0.86) 0.25s;
   .servises__item {
     margin: 2px;
     padding: 20px;
-    flex-basis: 90%;
     background: #FDF0E9;
-    border: 1.5px solid #F3D1BF;
+    border: 1px solid #F3D1BF;
     border-radius: 6px;
     position: relative;
-  }
-
-  .servises__item:hover {
-    box-shadow: none;
-    cursor: pointer;
-    transform: none;
   }
 
   .servises__bottom {
@@ -1587,21 +1588,33 @@ $drawer-open-transition: all cubic-bezier(0.92, -0.15, 0.21, 0.86) 0.25s;
     padding: 0 15px;
   }
 
-  .testimonials__title {
-    margin: 20px 0px 50px;
-  }
-
   .testimonials__item {
-    padding: 80px 20px 20px;
+    padding: 80px 7px 0;
     margin-bottom: 0;
     margin-top: 0;
     max-width: none;
-    width: 100%;
+    width: 80%;
     flex-grow: 1;
+
+    &-name {
+      padding-top: 12px;
+      padding-left: 125px;
+
+      &::after {
+        left: 27px;
+      }
+    }
+
+    &-company {
+      padding-left: 125px;
+    }
   }
 
   .testimonials__item-icon {
     display: block;
+    top: 38px;
+    left: 15px;
+
   }
 
   .testimonials__button:hover {
