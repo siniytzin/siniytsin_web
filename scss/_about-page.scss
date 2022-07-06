@@ -36,6 +36,12 @@
     padding: 0 25% 65px;
 
     &__subtitle {
+
+      &-bottom-border {
+        border-top: 1px solid #EF6D58;
+        padding-top: 32px;
+      }
+
       margin-bottom: 20px;
       font-size: 16px;
       line-height: 32px;

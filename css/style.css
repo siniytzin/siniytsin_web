@@ -1975,6 +1975,10 @@ svg {
   letter-spacing: 3px;
   color: #EF6D58;
 }
+.page-content__text__subtitle-bottom-border {
+  border-top: 1px solid #EF6D58;
+  padding-top: 32px;
+}
 .page-content__text__title {
   margin-bottom: 60px;
   font-weight: 800;
