@@ -2153,7 +2153,7 @@ svg {
 .servises__page {
   background-color: #FDF0E9;
   color: #391400;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   box-shadow: 0px 0px 9px #000000;
 }
 .servises__page-subtitle {
@@ -2172,9 +2172,14 @@ svg {
 }
 .servises__page__inner-item {
   padding-bottom: 97px;
+  width: 50%;
 }
 .servises__page__inner-item + .servises__page__inner-item {
   padding-left: 130px;
+}
+.servises__page-bottom {
+  box-shadow: 0px 0px #000000;
+  border-radius: 0 0 10px 10px;
 }
 
 .item__text-heading {
@@ -2192,4 +2197,69 @@ svg {
   color: rgba(57, 20, 0, 0.9);
   padding-left: 10px;
   line-height: 18px;
+}
+.item__text-numeric-list {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32px;
+  counter-reset: section;
+  position: relative;
+}
+.item__text-numeric-list > li {
+  padding: 30px 6px;
+}
+.item__text-numeric-list > li::before {
+  counter-increment: section;
+  content: counter(section);
+  font-size: 72px;
+  line-height: 58px;
+  position: absolute;
+  left: -66px;
+}
+
+.servises__accordion {
+  padding: 0 135px;
+  background: #FDF0E9;
+}
+.servises__accordion > .accordion {
+  color: #391400;
+}
+.servises__accordion > .accordion .ui-accordion-header {
+  padding: 30px 10px;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  border-top: 1px solid #391400;
+  border-bottom: 1px solid #391400;
+  border-color: #F3D1BF;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+}
+.servises__accordion > .accordion .ui-accordion-content {
+  padding: 10px 10px 10px 50%;
+}
+.servises__accordion > .accordion .ui-accordion-header-icon {
+  content: "";
+  position: absolute;
+  top: 53px;
+  right: 70px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../img/down.svg) 50% 50% no-repeat;
+}
+.servises__accordion > .accordion .ui-accordion-header-active .ui-accordion-header-icon {
+  background-image: url(../img/up.svg);
+}
+
+.accordion-bottom-title {
+  font-size: 40px;
+  line-height: 48px;
+  color: #391400;
+}
+.accordion-bottom-text {
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
 }
