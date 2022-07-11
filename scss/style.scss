@@ -38,8 +38,7 @@ svg {
   line-height: none;
 }
 
-:hover {
-}
+:hover {}
 
 ul {
   list-style: none;
@@ -181,7 +180,7 @@ svg {
   border: 2.5px solid #F3D1BF;
   border-radius: 6px;
   position: relative;
-  
+
 
   &-svg {
     width: 61px;
@@ -502,7 +501,7 @@ svg {
 }
 
 .features__inner {
-  padding: 145px 130px 100px;
+  padding: 145px 130px 0;
 
 }
 
@@ -656,10 +655,10 @@ svg {
   line-height: 32px;
 }
 
-.testimonials__item-bottom{
+.testimonials__item-bottom {
   position: absolute;
   bottom: 24px;
-  
+
 }
 
 .testimonials__item-name {
@@ -756,6 +755,29 @@ svg {
   line-height: 32px;
   color: #FFFFFF;
 }
+
+.social__icons {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    position: relative;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #EF6D58;
+    align-self: center;
+    
+    &::after {
+      position: absolute;
+      content: url(../img/arrow-bottom.svg);
+      top:53px;
+      left: 74px;
+    }
+  }
+}
+
 
 .line {
   position: relative;
@@ -1641,6 +1663,21 @@ $drawer-open-transition: all cubic-bezier(0.92, -0.15, 0.21, 0.86) 0.25s;
 
   .middle__text-subcontent {
     font-size: 18px;
+  }
+
+  .footer__inner {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+  }
+
+  .line {
+    margin-top: 10px;
+  }
+
+  .drawer {
+    margin-bottom: 40px;
   }
 }
 

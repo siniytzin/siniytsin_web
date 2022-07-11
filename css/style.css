@@ -1106,7 +1106,7 @@ svg {
 }
 
 .features__inner {
-  padding: 145px 130px 100px;
+  padding: 145px 130px 0;
 }
 
 .get-started__container {
@@ -1355,6 +1355,26 @@ svg {
   font-size: 16px;
   line-height: 32px;
   color: #FFFFFF;
+}
+
+.social__icons {
+  display: flex;
+  flex-direction: column;
+}
+.social__icons__title {
+  position: relative;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #EF6D58;
+  align-self: center;
+}
+.social__icons__title::after {
+  position: absolute;
+  content: url(../img/arrow-bottom.svg);
+  top: 53px;
+  left: 74px;
 }
 
 .line {
@@ -2177,6 +2197,20 @@ svg {
 
   .middle__text-subcontent {
     font-size: 18px;
+  }
+
+  .footer__inner {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .line {
+    margin-top: 10px;
+  }
+
+  .drawer {
+    margin-bottom: 40px;
   }
 }
 .page-header {
