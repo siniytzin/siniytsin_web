@@ -1578,7 +1578,7 @@ svg {
   }
 
   .testimonials__items {
-    padding: 0 40px;
+    padding: 0;
   }
 
   .testimonials__item {
@@ -2601,4 +2601,16 @@ svg {
   font-size: 16px;
   line-height: 32px;
   color: rgba(57, 20, 0, 0.64);
+}
+
+.contact-content {
+  background-color: #FDF0E9;
+  border-radius: 6px 6px 0 0;
+}
+.contact-content__get-in-touch {
+  border-radius: 6px 6px 0 0;
+  background-image: url(../img/contact.png);
+  background-position: center;
+  height: 800px;
+  width: 100%;
 }

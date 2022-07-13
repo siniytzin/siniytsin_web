@@ -1023,7 +1023,7 @@ $drawer-open-transition: all cubic-bezier(0.92, -0.15, 0.21, 0.86) 0.25s;
   }
 
   .testimonials__items {
-    padding: 0 40px;
+    padding: 0;
   }
 
   .testimonials__item {
@@ -1697,3 +1697,4 @@ $drawer-open-transition: all cubic-bezier(0.92, -0.15, 0.21, 0.86) 0.25s;
 
 @import "about-page.scss";
 @import "servises.scss";
+@import "contact.scss";
