@@ -58,12 +58,45 @@
                 </div>
             </section>
             <section class="contact-content">
-              <div class="contact-content__get-in-touch">
-                <div class="contact-content__form">
-
+                <div class="contact-content__get-in-touch">
+                    <div class="form">
+                        <h1 class="form__title">Связаться</h1>
+                        <div class="form__item">
+                            <input id="formName" type="text" name="name" placeholder="Имя*" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <input id="formEmail" type="text" name="name" placeholder="E-mail*" class="form__input">
+                        </div>
+                        <div class="form__item">
+                            <select name="option" class="select">
+                                <option disabled class="select__title">Выберите услугу</option>
+                                <option value="1">Сайт под ключ</option>
+                                <option value="2">Верстка макета</option>
+                                <option value="3">Модернизация сайта</option>
+                                <option value="4">Свободный макет</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <textarea name="message" class="form__input" placeholder="Сообщение"></textarea>
+                        </div>
+                        <div class="form__item">
+                            <div class="file">
+                                <div class="file__item">
+                                    <input accept=".doc .docx .txt" type="file" name="document" class="file__input">
+                                    <div class="file__button">Добавить файл</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <div class="checkbox">
+                                <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input">
+                                <label for="formAgreement" class="checkbox__label"><span>Согласие на обработку персональных данных с  <a href="">условиями</a>*</span></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form__button">Отправить</button>
+                    </div>
                 </div>
-              </div>
-          </section>
+            </section>
         </div>
     </main>
     <footer class="footer">
@@ -117,11 +150,12 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
-        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script> -->
+    <script src="./js/jquery360.js"></script>
+    <script src="./js/jquery-ui.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
