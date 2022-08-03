@@ -2,7 +2,7 @@
   use PHPMailer\PHPMailer\PHPmailer;
   use PHPMailer\PHPMailer\Exception;
 
-  require 'phpmailer/src/PHPMailer.php';
+  require 'ailer/src/PHPMailer.php';
   require 'phpmailer/src/Exception.php';
 
   $mail = new PHPMailer(true);
@@ -38,3 +38,4 @@
 
   header('Content-type: application/json');
   echo json_encode($response);
+  ?>
